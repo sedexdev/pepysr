@@ -1,0 +1,26 @@
+#config files
+config/default.json
+config/production.json
+
+# node modules
+node_modules
+/model/node_modules
+/view/node_modules
+
+#dependencies
+/view/.pnp
+/view/.pnp.js
+
+# testing
+/view/coverage
+
+# misc
+/view/.DS_Store
+/view/.env.local
+/view/.env.development.local
+/view/.env.test.local
+/view/.env.production.local
+
+/view/npm-debug.log*
+/view/yarn-debug.log*
+/view/yarn-error.log*

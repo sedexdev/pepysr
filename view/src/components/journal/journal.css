@@ -1,0 +1,137 @@
+.journal-main {
+    height: 100vh;
+    padding-top: 80px;
+}
+
+.journal-container {
+    font-size: 2.8rem;
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin: auto;
+    text-align: center;
+}
+
+.search-bar-form-container {
+    background-color: #999;
+    width: 100%;
+    padding: 10px 0;
+}
+
+.search-bar-form {
+    display: flex;
+    width: 80%;
+    margin: auto;
+}
+
+.search-bar {
+    font-size: 1.2rem;
+    height: 35px;
+    width: 100%;
+    padding-left: 5px;
+}
+
+.error {
+    border: 2px solid red;
+}
+
+.search-btn {
+    font-size: 1.6rem;
+    background: #fff;
+    border: 1px solid #999;
+    outline: none;
+    width: 40px;
+    cursor: pointer;
+}
+
+.search-btn:hover {
+    background-color: #111;
+    color: #fff;
+}
+
+.journal-date {
+    margin: 30px 20px 20px 20px !important;
+    font-size: 2.4rem;
+}
+
+.journal-form {
+    width: 100%;
+}
+
+.journal-data-container {
+    display: block;
+    height: 250px;
+    width: 100%;
+    font-size: 2rem;
+    margin: 0;
+}
+
+.journal-confirm-btn {
+    background-color: #5bfe03;
+    font-weight: bold;
+    font-size: 1.2rem;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    margin: 20px auto 0 auto;
+    cursor: pointer;
+}
+
+.journal-confirm-btn:hover {
+    background-color: #4bd601;
+}
+
+.journal-confirm-btn:focus {
+    outline: 0;
+}
+
+.journal-btn {
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 2.8rem;
+    cursor: pointer;
+}
+
+.journal-nav-container {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    font-size: 3rem;
+    width: 100%;
+    margin: 20px auto;
+}
+
+.journal-nav-container a {
+    color: #111;
+}
+
+@media (max-width: 550px) {
+    .search-bar-form {
+        width: 95%;
+    }
+
+    .journal-date {
+        font-size: 2rem;
+    }
+
+    .journal-confirm-btn {
+        font-size: 1rem;
+        height: 40px;
+        width: 40px;
+        margin: 5px auto 0 auto;
+    }
+
+    .journal-nav-container {
+        margin: 10px auto;
+    }
+
+    .journal-data-container {
+        font-size: 1.1rem;
+    }
+
+    .journal-btn {
+        font-size: 2.2rem;
+    }
+}

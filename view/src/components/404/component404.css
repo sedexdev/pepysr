@@ -1,0 +1,13 @@
+.container-404 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+}
+
+.msg-404 {
+    font-size: 2rem;
+    color: red;
+    letter-spacing: 1px;
+}

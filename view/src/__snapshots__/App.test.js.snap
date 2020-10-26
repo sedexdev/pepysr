@@ -1,0 +1,75 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<div
+  className="App"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="headings"
+    >
+      <h1
+        className="header"
+      >
+        PepysR
+      </h1>
+      <h2>
+        Login
+      </h2>
+    </div>
+    <form
+      className="form"
+      onSubmit={[Function]}
+    >
+      <label
+        className="label"
+        htmlFor="email"
+      >
+        Email
+      </label>
+      <input
+        className="input"
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Email..."
+        type="text"
+      />
+      <label
+        className="label"
+        htmlFor="Password"
+      >
+        Password
+      </label>
+      <input
+        className="input"
+        name="password"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onFocus={[Function]}
+        placeholder="Password..."
+        type="password"
+      />
+      <input
+        className="button"
+        type="submit"
+        value="Login"
+      />
+    </form>
+    <p
+      className="account-link"
+    >
+      Don't have an account? 
+      <a
+        href="/register"
+        onClick={[Function]}
+      >
+        Sign up
+      </a>
+    </p>
+  </div>
+</div>
+`;

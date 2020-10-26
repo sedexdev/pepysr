@@ -1,0 +1,48 @@
+.journal-header {
+    display: block;
+    padding: 100px 20px 0 20px;
+    font-size: 3rem;
+    text-align: center;
+}
+
+.journal-form {
+    width: 90%;
+    margin: auto;
+}
+
+.create-journal-button {
+    display: block;
+    border: 2px #000 dashed;
+    border-radius: 10px;
+    width: 80%;
+    padding: 8%;
+    margin: 50px auto 20px auto;
+    cursor: pointer;
+}
+
+.create-journal-button:hover {
+    background: #929292;
+    border: 4px red dashed;
+    color: #fff;
+}
+
+.create-journal-button[value="Click here..."] {
+    font-size: 5vw;
+}
+
+.spinner-container {
+    width: 100%;
+    margin: auto;
+    text-align: center;
+}
+
+.landing-spinner {
+    height: auto;
+    width: 100px;
+}
+
+@media (max-width: 550px) {
+    .create-journal-button[value="Click here..."] {
+        font-size: 10vw;
+    }
+}

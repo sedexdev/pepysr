@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<section>
+  <div
+    className="container-404"
+  >
+    <p
+      className="msg-404"
+    >
+      404: Oops, we couldn't find that page :(
+    </p>
+    <a
+      href="/"
+      onClick={[Function]}
+    >
+      <button
+        className="button"
+        type="button"
+      >
+        Back
+      </button>
+    </a>
+  </div>
+</section>
+`;

@@ -1,0 +1,11 @@
+{
+    "name": "model",
+    "version": "1.0.0",
+    "description": "database connection implementation and document model files",
+    "author": "Andrew Macmillan",
+    "license": "MIT",
+    "dependencies": {
+        "config": "^3.2.4",
+        "mongoose": "^5.8.11"
+    }
+}

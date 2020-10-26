@@ -1,0 +1,47 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+Array [
+  <header
+    className="navbar"
+  >
+    <p
+      className="banner-heading"
+    >
+      PepysR
+    </p>
+    <div
+      className="account-container"
+    >
+      <p
+        className="user-email"
+      />
+      <button
+        className="menu-btn"
+        onClick={[Function]}
+      >
+        <img
+          alt="Menu icon"
+          className="menu-icon"
+          src="menu.png"
+        />
+      </button>
+    </div>
+  </header>,
+  <h1
+    className="journal-header"
+  >
+    Create a new journal today
+  </h1>,
+  <form
+    className="journal-form"
+    onSubmit={[Function]}
+  >
+    <input
+      className="create-journal-button"
+      type="submit"
+      value="Click here..."
+    />
+  </form>,
+]
+`;

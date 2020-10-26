@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`renders correctly 1`] = `
+<main>
+  <div
+    className="redirect-message"
+  >
+    <h1>
+      We're sorry to see you go :(
+    </h1>
+    <p>
+      Redirecting...
+    </p>
+    <img
+      alt="loading spinner"
+      src={
+        Object {
+          "ReactComponent": Object {
+            "$$typeof": Symbol(react.forward_ref),
+            "render": [Function],
+          },
+          "__esModule": true,
+          "default": "index.triple-gears-loading-icon.svg",
+        }
+      }
+    />
+  </div>
+</main>
+`;
