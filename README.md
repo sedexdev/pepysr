@@ -2,13 +2,8 @@ PepysR is a diary application that will store everything you need to remember. I
 
 Samuel Pepys is world famous for what he wrote in his diary, what will you leave behind?
 
-App is hosted on Heroku at:
+To run the developmet server run:
 
-https://pepysr.herokuapp.com/
+<code>npm run dev</code>
 
-A test account has been setup with these credentials:
-
-email: test@email.com
-password: password
-
-By logging in with these details, a new journal can be made and tested.
+from the root directory
