@@ -17,7 +17,7 @@ From pepysr/package.json:
 },
 ```
 
-# 📘 pepysr
+# 📘 Pepysr
 
 PepysR is a diary application that will store everything you need to remember. If it's important, or even if it's not, jot it down in the application and feel confident that you'll never loose your schedule, your appointments or your life story.
 
