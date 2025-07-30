@@ -21,7 +21,7 @@ From pepysr/package.json:
 
 PepysR is a diary application that will store everything you need to remember. If it's important, or even if it's not, jot it down in the application and feel confident that you'll never loose your schedule, your appointments or your life story.
 
-Pepysr was a **\_3rd year coursework assignment** built on the MERN technology stack.
+Pepysr was a **_3rd year coursework assignment_** built on the MERN technology stack.
 
 Tooling:
 
