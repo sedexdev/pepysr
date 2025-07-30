@@ -1,6 +1,6 @@
 const Cryptr = require("cryptr");
 const config = require("config");
-const key = config.get("entryKey");
+const key = config.get("encryption.entryKey");
 const cryptr = new Cryptr(key);
 
 module.exports = {
@@ -15,7 +15,7 @@ module.exports = {
      * @return         returns a hashed string representation of
      *                 the entry
      */
-    encryptEntry: function(content) {
+    encryptEntry: function (content) {
         const encryptedContent = cryptr.encrypt(content);
         return encryptedContent;
     },
@@ -29,8 +29,8 @@ module.exports = {
      *                 entry data back to the client
      * @return         returns the plain text version of the entry
      */
-    decryptEntry: function(content) {
+    decryptEntry: function (content) {
         const decryptedContent = cryptr.decrypt(content);
         return decryptedContent;
-    }
+    },
 };

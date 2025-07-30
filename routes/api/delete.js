@@ -17,9 +17,9 @@ module.exports = () => {
             const session = req.session;
             const { userId, email } = req.session.user;
             if (session) {
-                session.destroy(err => {
+                session.destroy((err) => {
                     if (err) throw err;
-                    res.clearCookie(config.get("sessionName"));
+                    res.clearCookie(config.get("session.sessionName"));
                 });
                 await User.findOneAndDelete({ email });
                 await Journal.findOneAndDelete({ user: userId });

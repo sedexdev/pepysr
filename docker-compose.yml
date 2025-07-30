@@ -1,0 +1,17 @@
+services:
+    mongodb-data:
+        image: mongo:6
+        container_name: mongodb-data
+        restart: unless-stopped
+        env_file:
+            - ./.env.mongo-data
+        ports:
+            - "27017:27017"
+        volumes:
+            - ./mongo-data:/data/mongodb-data
+        networks:
+            - pepysr-net
+
+networks:
+    pepysr-net:
+        driver: bridge

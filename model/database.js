@@ -1,6 +1,6 @@
 const mongoose = require("mongoose");
 const config = require("config");
-const mongoURI = config.get("mongoURI");
+const mongoDBPassword = config.get("database.mongoDBPassword");
 
 /**
  * @description  Asynchronously connects the the application to the MongoDB
@@ -9,14 +9,10 @@ const mongoURI = config.get("mongoURI");
  *               exit code 1
  * @return       None
  */
+const mongoURI = `mongodb://admin:${mongoDBPassword}@localhost:27017/pepysrdb?authSource=admin`;
 const connectMongo = async () => {
     try {
-        await mongoose.connect(mongoURI, {
-            useNewUrlParser: true,
-            useUnifiedTopology: true,
-            useCreateIndex: true,
-            useFindAndModify: false
-        });
+        await mongoose.connect(mongoURI, {});
         console.log("MongoDB connected...");
     } catch (err) {
         process.exit(1);

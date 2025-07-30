@@ -2,9 +2,9 @@ const express = require("express");
 const app = express();
 const mongoose = require("mongoose");
 const connectMongo = require("./model/database");
-const path = require("path");
 const session = require("express-session");
 const config = require("config");
+const mongoDBPassword = config.get("database.mongoDBPassword");
 const MongoDBStore = require("connect-mongodb-session")(session);
 const uuid = require("uuid");
 
@@ -37,28 +37,28 @@ connectMongo();
  * @return         None
  */
 const mdbStore = new MongoDBStore({
-    uri: config.get("mongoURI"),
+    uri: `mongodb://admin:${mongoDBPassword}@localhost:27017/pepysrdb?authSource=admin`,
     mongooseConnection: mongoose.connection,
     collection: "sessions",
-    ttl: config.get("sessionLife") / 1000
+    ttl: config.get("session.sessionLife") / 1000,
 });
 
 // Session middleware
 app.use(
     session({
-        name: config.get("sessionName"),
-        genid: function() {
+        name: config.get("session.sessionName"),
+        genid: function () {
             return uuid.v4();
         },
-        secret: config.get("sessionKey"),
+        secret: config.get("session.sessionKey"),
         resave: false,
         saveUninitialized: false,
         cookie: {
             sameSite: true,
             httpOnly: true,
-            maxAge: config.get("sessionLife")
+            maxAge: config.get("session.sessionLife"),
         },
-        store: mdbStore
+        store: mdbStore,
     })
 );
 
@@ -71,16 +71,6 @@ app.use("/api/logout", logoutRoute());
 app.use("/api/user", userRoute());
 app.use("/api/delete", deleteRoute());
 app.use("/api/journal", journalRoute());
-
-// Serve up static assets in production
-if (process.env.NODE_ENV === "production") {
-    // This is the location of the static build assets
-    app.use(express.static("./view/build"));
-
-    app.get("*", (req, res) => {
-        res.sendFile(path.resolve(__dirname, "view", "build", "index.html"));
-    });
-}
 
 const PORT = process.env.PORT || 5000;
 

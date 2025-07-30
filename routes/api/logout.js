@@ -12,9 +12,9 @@ module.exports = () => {
         try {
             const session = req.session;
             if (session) {
-                session.destroy(err => {
+                session.destroy((err) => {
                     if (err) throw err;
-                    res.clearCookie(config.get("sessionName"));
+                    res.clearCookie(config.get("session.sessionName"));
                     return res.status(200).json("Logged out");
                 });
             } else {

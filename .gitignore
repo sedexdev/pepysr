@@ -1,6 +1,9 @@
+# dev files
+.vscode/
+
 #config files
-config/default.json
-config/production.json
+config/
+.env.mongo-data
 
 # node modules
 node_modules
@@ -24,3 +27,5 @@ node_modules
 /view/npm-debug.log*
 /view/yarn-debug.log*
 /view/yarn-error.log*
+
+/**/package-lock.json
